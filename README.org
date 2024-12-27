@@ -42,11 +42,11 @@
       поддиректорию refs ({outDir}/refs).
 
       Заменяет соответственно пути ссылок из внутренних
-      на внешние (#/components/schema/asd станет refs/somehash.yaml
-      или somehash.yaml)
+      на внешние (=#/components/schema/asd= станет =refs/somehash.yaml=
+      или =somehash.yaml=)
 
    2. Собирает и группирует полученные из 1го пункта пути по тегам.
    3. Генерирует разделенные по тегам данные.
 
-      по-сути если есть тэг Address, то в файле Address.yaml
+      По-сути если есть тэг Address, то в файле Address.yaml
       будет не полноценный конфиг openapi, а список путей

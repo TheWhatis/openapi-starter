@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Установка](#org357649d)
-2.  [Использование](#org6e03dd7)
-    1.  [Основное](#orgca2bd77)
-    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#org86cb3ba)
-    3.  [`npm start [?name]`](#orgf7de386)
-    4.  [`npm run build [?name]`](#orgcfac6b7)
-    5.  [`npm test`](#orgb0f6429)
-    6.  [`split.sh [openapi.yaml] [outDir]`](#org030cceb)
+1.  [Установка](#org2d1f942)
+2.  [Использование](#orgc897257)
+    1.  [Основное](#orgd8b23cf)
+    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#org9da3f1d)
+    3.  [`npm start [?name]`](#orga6ea073)
+    4.  [`npm run build [?name]`](#org173f01e)
+    5.  [`npm test`](#orgb90d16c)
+    6.  [`split.sh [openapi.yaml] [outDir]`](#orgcd67ece)
 
 
 
-<a id="org357649d"></a>
+<a id="org2d1f942"></a>
 
 # Установка
 
@@ -20,24 +20,21 @@
 2.  Сделайте клон репозиторий и запустите `npm install` в корневой директории
 
 
-<a id="org6e03dd7"></a>
+<a id="orgc897257"></a>
 
 # Использование
 
 
-<a id="orgca2bd77"></a>
+<a id="orgd8b23cf"></a>
 
 ## Основное
 
--   В `redocly.yaml`, в опции `apis` указан список
-
-доступных "разделов" которые можно запустить/собрать ([name]).
-
+-   В `redocly.yaml`, в опции `apis` указан список доступных "разделов" которые можно запустить/собрать ([name]).
 -   Все шаблоны и вложения находятся в директории docs
 -   Все openapi конфиги находятся в директории openapi
 
 
-<a id="org86cb3ba"></a>
+<a id="org9da3f1d"></a>
 
 ## `start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`
 
@@ -47,28 +44,28 @@
 порту 8080
 
 
-<a id="orgf7de386"></a>
+<a id="orga6ea073"></a>
 
 ## `npm start [?name]`
 
 Запускает предпросмотр документации
 
 
-<a id="orgcfac6b7"></a>
+<a id="org173f01e"></a>
 
 ## `npm run build [?name]`
 
 Делает сборку документации
 
 
-<a id="orgb0f6429"></a>
+<a id="orgb90d16c"></a>
 
 ## `npm test`
 
 Валидирует конфиги
 
 
-<a id="org030cceb"></a>
+<a id="orgcd67ece"></a>
 
 ## `split.sh [openapi.yaml] [outDir]`
 

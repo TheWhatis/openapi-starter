@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: 'User openapi'
+  description: >
+    [Получение и передача часов пользователя + мероприятия + организация](./assets/drf.docx)
+servers:
+  - url: https://dobro.ru/
+    description: The production api server
+paths:
+  $ref: decomposed/User.yaml

@@ -1,9 +1,15 @@
 # See https://redocly.com/docs/cli/configuration/ for more information.
-apis:
-  sample@v1: 
-    root: openapi/openapi.yaml
 extends:
   - recommended
+apis:
+  address:
+    root: openapi/openapi-address.yaml
+    labels:
+      - address
+  user:
+    root: openapi/openapi-user.yaml
+    labels:
+      - user
 rules:
   no-unused-components: error
   no-server-example.com: off

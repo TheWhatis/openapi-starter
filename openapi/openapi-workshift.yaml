@@ -1,0 +1,9 @@
+openapi: 3.0.3
+info:
+  title: ''
+  description: ''
+  version: 0.0.0
+servers:
+  - url: https://dobro.ru/api/v2
+    description: The production API server
+$ref: decomposed/WorkShift.yaml

@@ -1,0 +1,9 @@
+openapi: 3.0.3
+info:
+  title: 'Address openapi'
+  description: 'Some description'
+servers:
+  - url: https://dobro.ru/
+    description: The production API server
+paths:
+  $ref: decomposed/Address.yaml

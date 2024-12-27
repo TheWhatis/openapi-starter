@@ -1,17 +1,18 @@
 
 # Table of Contents
 
-1.  [Установка](#orgda6af3b)
-2.  [Использование](#org0cb8bcb)
-    1.  [Основное](#orgb549a1a)
-    2.  [`npm start [?name]`](#org485fcae)
-    3.  [`npm run build [?name]`](#org2fbd8c6)
-    4.  [`npm test`](#org2b4cb08)
-    5.  [`split.sh [openapi.yaml] [outDir]`](#org5d1f299)
+1.  [Установка](#org357649d)
+2.  [Использование](#org6e03dd7)
+    1.  [Основное](#orgca2bd77)
+    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#org86cb3ba)
+    3.  [`npm start [?name]`](#orgf7de386)
+    4.  [`npm run build [?name]`](#orgcfac6b7)
+    5.  [`npm test`](#orgb0f6429)
+    6.  [`split.sh [openapi.yaml] [outDir]`](#org030cceb)
 
 
 
-<a id="orgda6af3b"></a>
+<a id="org357649d"></a>
 
 # Установка
 
@@ -19,12 +20,12 @@
 2.  Сделайте клон репозиторий и запустите `npm install` в корневой директории
 
 
-<a id="org0cb8bcb"></a>
+<a id="org6e03dd7"></a>
 
 # Использование
 
 
-<a id="orgb549a1a"></a>
+<a id="orgca2bd77"></a>
 
 ## Основное
 
@@ -36,28 +37,38 @@
 -   Все openapi конфиги находятся в директории openapi
 
 
-<a id="org485fcae"></a>
+<a id="org86cb3ba"></a>
+
+## `start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`
+
+Создает venv для split, устанавливает requirements.txt в окружение,
+декомпозирует большой openapi.yaml, запускает предпросмотр документации
+по переданному apiName или первый попавшийся по переданному port или по
+порту 8080
+
+
+<a id="orgf7de386"></a>
 
 ## `npm start [?name]`
 
 Запускает предпросмотр документации
 
 
-<a id="org2fbd8c6"></a>
+<a id="orgcfac6b7"></a>
 
 ## `npm run build [?name]`
 
 Делает сборку документации
 
 
-<a id="org2b4cb08"></a>
+<a id="orgb0f6429"></a>
 
 ## `npm test`
 
 Валидирует конфиги
 
 
-<a id="org5d1f299"></a>
+<a id="org030cceb"></a>
 
 ## `split.sh [openapi.yaml] [outDir]`
 

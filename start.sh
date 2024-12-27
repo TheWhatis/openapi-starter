@@ -14,6 +14,7 @@ openapiConfig="$root/openapi/openapi.yaml"
 outputDir="$root/openapi/decomposed"
 apiName=NO
 decompose=YES
+port=8080
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -36,6 +37,11 @@ while [[ $# -gt 0 ]]; do
             shift
             shift
             ;;
+        -p|--port)
+            port="$2"
+            shift
+            shift
+            ;;
     esac
 done
 
@@ -44,7 +50,7 @@ if [ $decompose == YES ]; then
 fi
 
 if [ $apiName == NO ]; then
-    npm start
+    npm start -- --port=$port
 else
-    npm start $apiName
+    npm start $apiName -- --port=$port
 fi

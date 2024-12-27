@@ -13,6 +13,10 @@
    - Все шаблоны и вложения находятся в директории docs
    - Все openapi конфиги находятся в директории openapi
 
+
+   1. =npm install=
+   2. =./start.sh=
+
 ** =start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...=
    Создает venv для split, устанавливает requirements.txt в окружение,
    декомпозирует большой openapi.yaml, запускает предпросмотр документации

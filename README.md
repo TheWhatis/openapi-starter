@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Установка](#org1f5ce26)
-2.  [Использование](#org1540d1c)
-    1.  [Основное](#org2defc60)
-    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#org1dc4630)
-    3.  [`npm start [?name]`](#org572df41)
-    4.  [`npm run build [?name]`](#orgda68016)
-    5.  [`npm test`](#org63b8af5)
-    6.  [`split.sh [openapi.yaml] [outDir]`](#org217a85c)
+1.  [Установка](#org07351b4)
+2.  [Использование](#orgfa7dbef)
+    1.  [Основное](#orgce9a79b)
+    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#orgc0e68ee)
+    3.  [`npm start [?name]`](#org39ea6fb)
+    4.  [`npm run build [?name]`](#org5646de7)
+    5.  [`npm test`](#org527363b)
+    6.  [`split.sh [openapi.yaml] [outDir]`](#org3573b43)
 
 
 
-<a id="org1f5ce26"></a>
+<a id="org07351b4"></a>
 
 # Установка
 
@@ -20,12 +20,12 @@
 2.  Сделайте клон репозиторий и запустите `npm install` в корневой директории
 
 
-<a id="org1540d1c"></a>
+<a id="orgfa7dbef"></a>
 
 # Использование
 
 
-<a id="org2defc60"></a>
+<a id="orgce9a79b"></a>
 
 ## Основное
 
@@ -33,8 +33,11 @@
 -   Все шаблоны и вложения находятся в директории docs
 -   Все openapi конфиги находятся в директории openapi
 
+1.  `npm install`
+2.  `./start.sh`
 
-<a id="org1dc4630"></a>
+
+<a id="orgc0e68ee"></a>
 
 ## `start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`
 
@@ -44,28 +47,28 @@
 порту 8080
 
 
-<a id="org572df41"></a>
+<a id="org39ea6fb"></a>
 
 ## `npm start [?name]`
 
 Запускает предпросмотр документации
 
 
-<a id="orgda68016"></a>
+<a id="org5646de7"></a>
 
 ## `npm run build [?name]`
 
 Делает сборку документации
 
 
-<a id="org63b8af5"></a>
+<a id="org527363b"></a>
 
 ## `npm test`
 
 Валидирует конфиги
 
 
-<a id="org217a85c"></a>
+<a id="org3573b43"></a>
 
 ## `split.sh [openapi.yaml] [outDir]`
 

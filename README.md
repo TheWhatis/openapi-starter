@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Установка](#org2d1f942)
-2.  [Использование](#orgc897257)
-    1.  [Основное](#orgd8b23cf)
-    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#org9da3f1d)
-    3.  [`npm start [?name]`](#orga6ea073)
-    4.  [`npm run build [?name]`](#org173f01e)
-    5.  [`npm test`](#orgb90d16c)
-    6.  [`split.sh [openapi.yaml] [outDir]`](#orgcd67ece)
+1.  [Установка](#org1f5ce26)
+2.  [Использование](#org1540d1c)
+    1.  [Основное](#org2defc60)
+    2.  [`start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`](#org1dc4630)
+    3.  [`npm start [?name]`](#org572df41)
+    4.  [`npm run build [?name]`](#orgda68016)
+    5.  [`npm test`](#org63b8af5)
+    6.  [`split.sh [openapi.yaml] [outDir]`](#org217a85c)
 
 
 
-<a id="org2d1f942"></a>
+<a id="org1f5ce26"></a>
 
 # Установка
 
@@ -20,12 +20,12 @@
 2.  Сделайте клон репозиторий и запустите `npm install` в корневой директории
 
 
-<a id="orgc897257"></a>
+<a id="org1540d1c"></a>
 
 # Использование
 
 
-<a id="orgd8b23cf"></a>
+<a id="org2defc60"></a>
 
 ## Основное
 
@@ -34,7 +34,7 @@
 -   Все openapi конфиги находятся в директории openapi
 
 
-<a id="org9da3f1d"></a>
+<a id="org1dc4630"></a>
 
 ## `start.sh [--api=apiName] [-p|--port=port] [-c|--config=openapiConfig] ...`
 
@@ -44,28 +44,28 @@
 порту 8080
 
 
-<a id="orga6ea073"></a>
+<a id="org572df41"></a>
 
 ## `npm start [?name]`
 
 Запускает предпросмотр документации
 
 
-<a id="org173f01e"></a>
+<a id="orgda68016"></a>
 
 ## `npm run build [?name]`
 
 Делает сборку документации
 
 
-<a id="orgb90d16c"></a>
+<a id="org63b8af5"></a>
 
 ## `npm test`
 
 Валидирует конфиги
 
 
-<a id="orgcd67ece"></a>
+<a id="org217a85c"></a>
 
 ## `split.sh [openapi.yaml] [outDir]`
 
@@ -82,12 +82,12 @@
     поддиректорию refs ({outDir}/refs).
     
     Заменяет соответственно пути ссылок из внутренних
-    на внешние (#/components/schema/asd станет refs/somehash.yaml
-    или somehash.yaml)
+    на внешние (`#/components/schema/asd` станет `refs/somehash.yaml`
+    или `somehash.yaml`)
 
 2.  Собирает и группирует полученные из 1го пункта пути по тегам.
 3.  Генерирует разделенные по тегам данные.
     
-    по-сути если есть тэг Address, то в файле Address.yaml
+    По-сути если есть тэг Address, то в файле Address.yaml
     будет не полноценный конфиг openapi, а список путей
 
